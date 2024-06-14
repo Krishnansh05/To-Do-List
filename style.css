@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 75%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #8ec5fc;
+}
+
+button {
+    width: 25%;
+    background: #8ec5fc;
+    border: none;
+    padding: 15px;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #7389ff;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s, transform 0.3s;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background: #e0ffe0;
+}
+
+li:hover {
+    background: #ececec;
+    transform: scale(1.02);
+}
+
+li .delete {
+    background: #ff4c4c;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+li .delete:hover {
+    background: #ff1c1c;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-weight: 500;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
